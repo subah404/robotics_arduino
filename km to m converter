@@ -1,0 +1,12 @@
+void setup()
+{
+  Serial.begin(9600);
+  int km = 10;
+  int m = 1000*km;
+  Serial.println(m);
+}
+
+void loop()
+{
+  
+}
