@@ -1,0 +1,41 @@
+int red = 13, blue = 12, green = 11;
+
+void setup()
+{
+  Serial.begin(9600);
+  
+  pinMode(red,OUTPUT);
+  pinMode(blue,OUTPUT);
+  pinMode(green,OUTPUT);
+  
+}
+
+void loop()
+{
+  cmyBlink();
+  
+}
+
+void cmyBlink () {
+  digitalWrite(blue,HIGH);
+  digitalWrite(green,HIGH);
+  delay(1000);
+  digitalWrite(blue,LOW);
+  digitalWrite(green,LOW);
+  delay(1000);
+  
+  digitalWrite(red,HIGH);
+  digitalWrite(blue,HIGH);
+  delay(1000);
+  digitalWrite(red,LOW);
+  digitalWrite(blue,LOW);
+  delay(1000);
+  
+  digitalWrite(red,HIGH);
+  digitalWrite(green,HIGH);
+  delay(1000);
+  digitalWrite(red,LOW);
+  digitalWrite(green,LOW);
+  delay(1000);  
+  
+}
